@@ -51,6 +51,12 @@ button {
     margin: auto;
     text-align: center;
 }
+.button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
     </style>
     <body><!-- SCM Music Player https://www.scmplayer.net -->
 <script type="text/javascript" src="https://www.scmplayer.net/script.js" 
@@ -71,9 +77,8 @@ data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':false,'shuffl
             <a href="https://tinyurl.com/MasaB-HBP2028">Digital Portfolio</a>
         </div>
         <div class="LTI"><h2>LTI</h2></div>
-        <button id="showCalendarButton">Calendar</button>
-
-
+        <div class="button-container">
+            <button id="showCalendarButton">Calendar</button>
         <table id="calendar" style="display: none;">
             <thead>
               <tr>
