@@ -51,9 +51,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    min-height: 100vh; /* Ensure the body is at least the height of the viewport */
     margin: 0; /* Remove default margin */
     flex-direction: column; /* Stack the button and calendar vertically */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
 }
 
 .button-container {
