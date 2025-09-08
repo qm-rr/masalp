@@ -1,109 +1,107 @@
 <!doctype html>
 <html>
     <head>
-        <title>[Goals]</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>Goals - Masa</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     </head>
-    <style>
-    .Goals {
+    <style>    footer{
         text-align: center;
-        text-decoration-line: overline underline;
-	    font-family: Arial, Helvetica, sans-serif;
+        writing-mode: vertical-rl;
+        font-size: 1.5rem;
+        position: fixed;
     }
+    footer a{
+        text-decoration: none;
+        color: white;
+        font-family: monospace;
+    }
+    footer a:hover,
+    footer a:active {
+      text-decoration: underline;
+}
+.nav-item a{
+    text-transform:uppercase;
+    font-size: 2.5rem;
+    font-family: 'Jost';
+    font-weight: 800;
+    margin-left: 10px;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+     display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 6vh;
+}
+.nav-item:hover,
+.nav-item:active {
+    transform: scale(1.05);
+    letter-spacing: 2px;
+    transition: 0.3s
+}
+header {
+    text-transform: uppercase;
+    font-family: 'Asimovian';
+    color: white;
+    font-size:xx-large;
+    margin-left: 50px;
+}
+body {
+    background-color: black;
+}
+/**/
     td, th {
-  border: 1px solid #000000;
+  border: 1px solid #2d2d2d;
   text-align: center;
-  padding: 0px;
+  padding: 5px;
 }
 
 tr:nth-child(baller) {
-  background-color: #dddddd;
+  background-color: #2d2d2d;
 }
 table {
-
+  border-collapse: collapse;
   width: auto;
   margin:auto;
-  border: 2px solid black;
-  border-style: outset;
-  background-color: white;
-  padding: 6px;
+  border-style:none;
+  background-color: rgb(0, 0, 0);
+  padding: 0%;
+}
+table a{
+    text-decoration: none;
+    color: white;
 }
 th {
-    background-color: blanchedalmond;
+    background-color: rgb(46, 46, 46);
 }
-.menu {
-	text-align: center;
-	margin-bottom: 24px;
-	margin-top: 24px;
-    font-size: smaller;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.menu a {
-	color: blue;
-} 
-.goals{
-  font-family: arial, sans-serif;
-  width: auto;
-  margin:auto;
-  font-size:x-small ;
-  background-color: white;
-}
-        .about{margin:auto;
-    width:50%;
-    color:rgb(0, 0, 0);
-    font-size: x-small;
-  font-family: arial, sans-serif;
-  margin: auto;
-  border: 2px solid black;
-  border-style: outset;
-  background-color: white;
-  padding: 7px;
-        }
-        .list{
-            margin-left: 35%;
-            font-size: x-small;
-        }
-        .myProject{
-          background-color: blanchedalmond;
-  border: 1px solid black;
-  padding: 0px;
-}
-	    a {
-		    color: blue;
-	    }
-        .currentProjects{
-         margin:auto;
-    width:50%;
-    color:rgb(0, 0, 0);
-    font-size: x-small;
-  font-family: arial, sans-serif;
-  margin: auto;
-  border: 2px solid black;
-  border-style: outset;
-  background-color: white;
-  padding: 7px;
-        }
+/**/
     </style>
-    <body><!-- SCM Music Player https://www.scmplayer.net -->
-<script type="text/javascript" src="https://www.scmplayer.net/script.js" 
-data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':false,'playlist':[{'title':'Backlight','url':'https://music.youtube.com/watch?v=vHfAjfKVMew&si=4Oz17uLRuXJG_KRn'},{'title':'Dramaturgy','url':'https://music.youtube.com/watch?v=dEfl-ObuapA&si=BGFZ1dp5EmJI5AbS'},{'title':'Elliot P','url':'https://www.youtube.com/watch?v=NEajkPbi1ks'},{'title':'Fightsong','url':'https://music.youtube.com/watch?v=Pm_q0ACjP_k&si=tcQip9q3vcaggYrp'},{'title':'Here Comes The Sun','url':'https://music.youtube.com/watch?v=xUNqsfFUwhY&si=RXjVO0fCBTEGmv3m'},{'title':'Hey Jude','url':'https://music.youtube.com/watch?v=mQER0A0ej0M&si=qtPeG3Qw0wjEdRD1'},{'title':'Kaikai Kitan','url':'https://music.youtube.com/watch?v=isY3rtuSsK8&si=0_X3o3Jfq-Ii9ASh'},{'title':'Last Dance','url':'https://music.youtube.com/watch?v=WFRB9zl8tS8&si=yDWfVJCDt77SRD3v'},{'title':'New Genesis','url':'https://music.youtube.com/watch?v=ViOzYSYWCMM&si=9K5MQ9HHhX8Id98c'},{'title':'Show','url':'https://music.youtube.com/watch?v=vwZAqxL8rgs&si=DKTarF7D1PnIUPW0'},{'title':'Strawberry Fields Forever','url':'https://music.youtube.com/watch?v=10LSq_J5ol4&si=GRLhxlMPUlwgNuxU'},{'title':'Usseewa','url':'https://music.youtube.com/watch?v=GtPLYvYeZ_4&si=m7okC7kWR5REwQ6d'}]}" ></script>
-<!-- SCM Music Player script end -->
-
-
-
-        <div class="menu">
-            <a href="https://masalp.net">Home</a> /<!--once i publish it, change url to the published page instead of my C: drive-->
-            <a href="https://masalp.net/Learning%20Plan-%20Goals.html" target="content"><b>Goals</b></a> /
-            <a href="https://masalp.net/Learning%20Plan-%20LTI.html" target="content">LTI</a> /
-            <a href="https://masalp.net/Learning%20Plan-%20ToDo.html">To- Do</a> /
-            <a href="https://mail.google.com/mail/u/0/#inbox">✉E-mail✉</a> /
-            <a href="https://classroom.google.com/u/1/">Google Classroom</a> /
-            <a href="https://imblaze.my.site.com/s/">ImBlaze</a> / 
-            <a href="https://tinyurl.com/MasaB-HBP2028">Digital Portfolio</a>
-        </div>
-        <div class="Goals">
-        <h2>Goals</h2></div><div class="goals">
-        <table>
+    <body>
+        <header>
+    <h1>
+        masa berry
+    </h1>
+</header>
+<div class="main-nav">
+<ul>
+    <li class="nav-item"><a href="https://masalp.net">home</a></li>
+    <li class="nav-item"><a href="https://masalp.net/Learning%20Plan-%20Goals.html">goals</a></li>
+    <li class="nav-item"><a href="https://masalp.net/Learning%20Plan-%20LTI.html">lti</a></li>
+    <li class="nav-item"><a href="https://masalp.net/Learning%20Plan-%20ToDo.html">todo</a></li>
+</ul>
+</div>
+<footer>
+<a href="https://mail.google.com/mail/u/0/#inbox">MAIL</a>-
+<a href="https://classroom.google.com/u/0/">CLASSROOM</a>-
+<a href="https://imblaze.my.site.com/s/">IMBLAZE</a>
+</footer>
+<table style="color: white; font-family: 'Jost';">
         <tr>
             <th>Goal</th>
             <th>Notes</th>
@@ -113,78 +111,20 @@ data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':false,'shuffl
             <th>Priority</th>
         </tr>
         <tr>
-            <td>Design and build FRC minibot</td>
-            <td>offseason project</td>
-            <td>Exhibitions</td>
-            <td></td>
-            <td>/comms//qr//er//pq/</td>
-            <td>high</td>
-        </tr>
-        <tr>
-            <td>Code Tekerz Website</td>
-            <td>offseason project</td>
-            <td>Exhibitions</td>
-            <td></td>
-            <td>/comms//qr//er//pq/</td>
-        </tr>
-        <tr>
-            <td>Code LP</td>
-            <td>im copying niko</td>
-            <td>:/</td>
-            <td>imagine there is a link here</td>
-            <td>/qr//er//comms//sr//pq/</td>
-            <td>high</td>
-        </tr>
-        <tr>
-            <td>Learn Java</td>
-            <td>I wanna be a programmer, or at least <br>have knowledge about programming at robotics.</td>
-            <td>no real timeframe</td>
-            <td><a href="https://masalp.net/Learning%20Plan-%20Java.html">linkk</a></td>
-            <td>/qr//er//comms//sr//pq/</td>
-            <td>high</td>
-        </tr>
-        <tr>
             <td>Japanese</td>
-            <td>I take the Japanese language seminar, along with doing Anki flashcards</td>
+            <td>I'm taking lessons at the Seattle Japanese Language School</td>
             <td></td>
             <td><a href="https://masalp.net/Learning%20Plan-%20Japanese.html">Japanese</a></td>
             <td>/comms//pq//sr/</td>
             <td>med</td>
         </tr>
         <tr>
-            <td>Robotics</td>
-            <td>I'm part of a <i>FIRST</i> robotics club</td>
-            <td>Jan. - undefined</td>
-            <td><a href="https://masalp.net/Learning%20Plan-%20Java.html">Robotics</a></td>
-            <td>/qr//er//comms//pq/</td>
-            <td>med</td>
-        </tr>
-        <tr>
-            <td>Math- Tutoring</td>
-            <td>i don't think the math class is challenging enough. i want be as good as tak</td>
-            <td>forever cursed</td>
-            <td><a href="https://masalp.net/Learning%20Plan-%20Math.html">Math</a></td>
-            <td>/qr//pq/</td>
-            <td>high</td>
+            <td>Judo</td>
+            <td>Doing judo classes at Budokan Dojo</td>
+            <td></td>
+
         </tr>
     </table>
-    <br>
-</div>
-<div class="about">
-    <div class="myProject"><h3>My Project</h3></div>
-        <p>This learning cycle, I want to prioritize robotics as a project. I also want to keep working on my website, but I think that if I prioritize robotics a little bit more, then our team will do better and I will still be learning a lot.</p>
-<div class="list"><ul>
-    <li>Code Learning Plan</li>
-    <li>Learn Java at Robotics</li>
-</ul></div>
-<a href="https://docs.google.com/document/d/1X_-st5V7cEbpTvj0Y4QppL3QY0lMc7dEkUqddt5-tGQ/edit?tab=t.0">Project Proposal</a>
-</div>
-<div class="currentProjects">
-    <div class="myProject"><h3>Current Projects</h3></div>
-    <ul>
-        <li><a href="https://masalp.net">This website</a></li>
-        <li><a href="https://qm-rr.github.io/TekerzRobotics/">Tekerz Robotics</a></li>
-    </ul>
-</div>
+    
     </body>
 </html>
