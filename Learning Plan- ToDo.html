@@ -1,182 +1,116 @@
 <!doctype html>
 <html>
     <head>
-        <title>[To- Do]</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>Todo - Masa</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <style>
-        .menu {
-	text-align: center;
-	margin-bottom: 24px;
-	margin-top: 24px;
-    font-size: smaller;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    footer{
+        text-align: center;
+        writing-mode: vertical-rl;
+        font-size: 1.5rem;
+        position: fixed;
+    }
+    footer a{
+        text-decoration: none;
+        color: white;
+        font-family: monospace;
+    }
+    footer a:hover,
+    footer a:active {
+      text-decoration: underline;
 }
-.menu a {
-	color: blue;
+.nav-item a{
+    text-transform:uppercase;
+    font-size: 2.5rem;
+    font-family: 'Jost';
+    font-weight: 800;
+    margin-left: 10px;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+     display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 6vh;
 }
-td, th {
-  border: 1px solid #000000;
+.nav-item:hover,
+.nav-item:active {
+    transform: scale(1.05);
+    letter-spacing: 2px;
+    transition: 0.3s
+}
+header {
+    text-transform: uppercase;
+    font-family: 'Asimovian';
+    color: white;
+    font-size:xx-large;
+    margin-left: 50px;
+}
+body {
+    background-color: black;
+}
+/**/
+    td, th {
+  border: 1px solid #2d2d2d;
   text-align: center;
-  padding: 0px;
+  padding: 5px;
+}
+
+tr:nth-child(baller) {
+  background-color: #2d2d2d;
 }
 table {
-    font-family: arial, sans-serif;
-  border-collapse:separate;
-  width: 50%;
-  margin: auto;
-  border: 2px solid black;
-  border-style: outset;
-  font-size:x-small ;
-  background-color: white;
-  padding: 6px;
+  border-collapse: collapse;
+  width: auto;
+  margin:auto;
+  border-style:none;
+  background-color: rgb(0, 0, 0);
+  padding: 0%;
+}
+table a{
+    text-decoration: none;
+    color: white;
 }
 th {
-    background-color:blanchedalmond;
+    background-color: rgb(46, 46, 46);
 }
-.reflectionHeader {
-    margin-left: 40%;
-font-family: Arial, Helvetica, sans-serif;
-text-decoration-line: overline underline;
-}
-.tasksHeader {
-    margin-left: 40%;
-font-family: Arial, Helvetica, sans-serif;
-text-decoration-line: overline underline;
-}
-.reflection {
-    margin:auto;
-    width:50%;
-    color:rgb(0, 0, 0);
-    font-size: x-small;
-  font-family: arial, sans-serif;
-  margin: auto;
-  border: 2px solid black;
-  border-style: outset;
-  background-color: white;
-  padding: 7px;
-}
-.date {
-    background-color: blanchedalmond;
-  border: 1px solid black;
-  padding: 0px;
-}
+/**/
     </style>
-    <body><!-- SCM Music Player https://www.scmplayer.net -->
-<script type="text/javascript" src="https://www.scmplayer.net/script.js" 
-data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':false,'playlist':[{'title':'Backlight','url':'https://music.youtube.com/watch?v=vHfAjfKVMew&si=4Oz17uLRuXJG_KRn'},{'title':'Dramaturgy','url':'https://music.youtube.com/watch?v=dEfl-ObuapA&si=BGFZ1dp5EmJI5AbS'},{'title':'Elliot P','url':'https://www.youtube.com/watch?v=NEajkPbi1ks'},{'title':'Fightsong','url':'https://music.youtube.com/watch?v=Pm_q0ACjP_k&si=tcQip9q3vcaggYrp'},{'title':'Here Comes The Sun','url':'https://music.youtube.com/watch?v=xUNqsfFUwhY&si=RXjVO0fCBTEGmv3m'},{'title':'Hey Jude','url':'https://music.youtube.com/watch?v=mQER0A0ej0M&si=qtPeG3Qw0wjEdRD1'},{'title':'Kaikai Kitan','url':'https://music.youtube.com/watch?v=isY3rtuSsK8&si=0_X3o3Jfq-Ii9ASh'},{'title':'Last Dance','url':'https://music.youtube.com/watch?v=WFRB9zl8tS8&si=yDWfVJCDt77SRD3v'},{'title':'New Genesis','url':'https://music.youtube.com/watch?v=ViOzYSYWCMM&si=9K5MQ9HHhX8Id98c'},{'title':'Show','url':'https://music.youtube.com/watch?v=vwZAqxL8rgs&si=DKTarF7D1PnIUPW0'},{'title':'Strawberry Fields Forever','url':'https://music.youtube.com/watch?v=10LSq_J5ol4&si=GRLhxlMPUlwgNuxU'},{'title':'Usseewa','url':'https://music.youtube.com/watch?v=GtPLYvYeZ_4&si=m7okC7kWR5REwQ6d'}]}" ></script>
-<!-- SCM Music Player script end -->
+<body>
+        <header>
+    <h1>
+        masa berry
+    </h1>
+</header>
+<div class="main-nav">
+<ul>
+    <li class="nav-item"><a href="https://masalp.net">home</a></li>
+    <li class="nav-item"><a href="https://masalp.net/Learning%20Plan-%20Goals.html">goals</a></li>
+    <li class="nav-item"><a href="https://masalp.net/Learning%20Plan-%20LTI.html">lti</a></li>
+    <li class="nav-item"><a href="https://masalp.net/Learning%20Plan-%20ToDo.html">todo</a></li>
+</ul>
+</div>
+<footer>
+<a href="https://mail.google.com/mail/u/0/#inbox">MAIL</a>-
+<a href="https://classroom.google.com/u/0/">CLASSROOM</a>-
+<a href="https://imblaze.my.site.com/s/">IMBLAZE</a>
+</footer>
+<table style="color: white; font-family: 'Jost';">
+        <tr>
+            <th>Task</th>
+            <th>Progress</th>
+            <th>Priority</th>
+            <th>Due</th>
+        </tr>
+    </table>
+    
 
-
-
-
-        <div class="menu">
-            <a href="https://masalp.net">Home</a> /<!--once i publish it, change url to the published page instead of my C: drive-->
-            <a href="https://masalp.net/Learning%20Plan-%20Goals.html" target="content">Goals</a> /
-            <a href="https://masalp.net/Learning%20Plan-%20LTI.html" target="content">LTI</a> /
-            <a href="https://masalp.net/Learning%20Plan-%20ToDo.html"><b>To- Do</b></a> /
-            <a href="https://mail.google.com/mail/u/0/#inbox">✉E-mail✉</a> /
-            <a href="https://classroom.google.com/u/1/">Google Classroom</a> /
-            <a href="https://imblaze.my.site.com/s/">ImBlaze</a> /
-            <a href="https://tinyurl.com/MasaB-HBP2028">Digital Portfolio</a>
-        </div>
-        <div class="tasksHeader"><h2>Tasks</h2></div>
-        <table>
-            <tr>
-                <th>Task</th>
-                <th>Progress</th>
-                <th>Priority</th>
-                <th>Due</th>
-            </tr>
-            <tr>
-            <td>Add components to learning plan</td>
-            <td>started</td>
-            <td>high</td>
-            <td>soon</td>
-            <tr>
-                <td>PQQR Math Homework</td>
-                <td>not started</td>
-                <td>low</td>
-                <td>soon</td>
-            </tr>
-            <tr>
-                <td>Tutoring Math Homework</td>
-                <td>done</td>
-                <td>high</td>
-                <td>every friday</td>
-            </tr>
-            <tr>
-                <td>Health</td>
-                <td>some progress</td>
-                <td>high</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>project proposal</td>
-                <td>progress</td>
-                <td>high</td>
-                <td></td>
-            </tr>
-        </table>
-        <div class="reflectionHeader">
-            <h2>Weekly Reflection</h2>
-        </div>
-        </div>
-        <!--use the "date" class for the date-->
-        <!--insert new entry here-->        
-        <div class="reflection">
-            <div class="date>">2025-05-23</div>
-            <p>this week, I completely forgot all about my tutoring math homework, so today im gonna work on that. I am about half way done with my level up cover letter, so i was hoping to be able to work on that, but I guess I'm gonna be working on math homework :(</p>
-            <div class="date">2025-05-16</div>
-            <p>I got most of my stuff done this week, now most of the work I need to get done is organizing all my stuff into my digital protfolio. I got my math homework done too, and I should start gathering evidence for my project.</p>
-            <div class="date">
-                <h3>2025-05-02</h3>
-            </div>
-            <p>I didn't really feel any motivation this week. I still have Health work to do, and I couldn't finish my math homework. I still have project work to do, and I need to start preparing for my panel. I have gotten a little bit of preparation for the Judo tournament tomorrow.</p>
-            <div class="date">
-                <h3>2025-04-25</h3>
-            </div>
-            <p>A struggle I had this week was my math homework. I completely forgot about it until yesterday, giving me one night to work on it all. I think I should try starting to work on it earlier in the week. I got all my health stuff done, so thats a plus. I also had a great shadow day with King County Fire District #2.</p>
-            <div class="date">
-                <h3>2025-04-18</h3>
-            </div>
-            <p>This week, I feel like I got a lot done on the robotics website. I'm almost done with the CAD for the minibot, and I have lots of progress on the team website. I also got a shadow day next week, so I'm excited about that.</p>
-            <div class="date">
-                <h3>2025-03-28</h3>
-            </div>
-            <p>This week, I got a lot of work done around robotics, but I didn't spend any time working on current events. I still have homework unfinished, and I didn't work very much on my learning plan. I did not do as well as I had hoped this week, and I have a lot of work to do next week.</p>
-            <div class="date">
-                <h3>2025-03-21</h3>
-            </div>
-            <p>This week, I think I accomplished a lot, for the first time in a while, I acually got my tutoring homework done. I still have pqqr homework to do though. That's something to work on for next week. I did spend a lot of time working on the robot at robotics, and I learned a lot of interesting stuff about Java, and driving the robot.</p>
-            <div class="date">
-                <h3>2025-02-21</h3>
-            </div>
-            <p>This week, I learned a lot of programming at robotics, and I did lots of tutoring homework. I sent 4 emails to contacts, and I started working on my literary analysis intro and conclusion. I also did my LC2 Reflection. I started brainstorming ideas for my learning plan next learning cycle</p>
-		<div class="date">
-			<h3>2025-02-07</h3>
-		</div>
-		<p>This week, I had 2 in- person interviews, and I requested 2 shadow days. I have had lots of growth in LTI, but I need more work on my project. I got a lot of homework done because of the snow days :)</p>
-		<div class="date">
-			<h3>2025-01-25</h3>
-		</div>
-			<p>This week, I had interviews on both Tuesday and Thursday, so I think that is evidence of growth in LTI. I also have an interview on the 4th, next Tuesday. I’m falling a bit behind on homework though, so I guess I’m gonna try to get that done tonight. </p>
-            <div class="date">
-                <h3>2025-01-24</h3>
-            </div>
-            <p>1/24/25- This week, most of my time spent was catching up on missed schoolwork, but I'm all caught up now, and I hope I get more free time next week. There also wasn’t very much new work being assigned, mostly just a few things to get done. also WITS. I do kind of feel like im falling behind on LTI.</p>
-            <div class="date">
-                <h3>2024-12-20</h3>
-            </div>
-            <p>This week, I worked a lot on my Learning Plan, and I'm pretty proud of it for only working on it for like 2 days. Other than that, I had some trouble staying motivated to do my math homework, including my tutoring stuff, despite not having the distraction of a video game. By that I mean I lost my Val account, but I was still just kinda sorta not doing that much. I did make some yummy mac and cheese! I also did my first in- person interview (or rather my second, but my first was me and Tak). Overall, I think I've grown a lot this week, even if I didn't meet my expectations.</p>
-            <div class="date">
-                <h3>2024-12-13</h3>
-            </div>
-        <p>This week, I think I did pretty well as far as completing my goals goes, I got 3 interviews, one of them is later today, and I did some work on my project proposal. I want to get my interviews and interview reflections done</p>
-        <div class="date">
-            <h3>2024-12-06</h3>
-        </div>
-        <p>This week, I think I didn’t get as much done as I had hoped, I was productive, but I also lost my retainer which cost me $300 which is sad. Overall, good week, definitely better than others. I did fall asleep twice though. Idk what that was about. I also didn’t work on my learning plan or project proposal as much as I should have.</p>
-    </div>
-    </body>
+</body>
 </html>
