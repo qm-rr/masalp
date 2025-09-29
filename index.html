@@ -22,6 +22,17 @@ SSSSS       SSSSS SSSSS SSSSS SSSSSsSSSSS SSSSS SSSSS SSSSSsSS;:' SSSSS       `:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
+  <div id="clock"></div>
+
+<script>function updateTime() {
+  const clockElement = document.getElementById('clock');
+  const now = new Date();
+  clockElement.textContent = now.toLocaleTimeString();
+}
+setInterval(updateTime, 1000); // Update the time every second
+updateTime(); // Call immediately to avoid a 1-second delay
+
+</script>
 <style>
     footer{
         text-align: center;
@@ -121,4 +132,5 @@ div {
 </footer>
 
 </html>
+
 
