@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><script src="https://public.radio.co/playerapi/jquery.radiocoplayer.min.js"></script>
 </head>
   
 
@@ -100,6 +101,7 @@ div {
         background-color: rgb(79, 79, 79);
     }
 </style>
+<body>
 <header>
     <h1>
         masa berry
@@ -130,6 +132,15 @@ div {
 <a href="https://imblaze.my.site.com/s/">IMBLAZE</a>
 </footer>
 
+<div class="radioplayer" data-src="<em><strong>https://streaming.radio.co/your_station/listen</strong></em>" data-autoplay="false" data-playbutton="true" data-volumeslider="true" data-elapsedtime="true" data-nowplaying="true" data-showplayer="true" data-volume="50" data-showartwork="false"></div>
+<script>$('.radioplayer').radiocoPlayer();
+  data-autoplay="false";
+  data-playbutton="true";
+  data-volumeslider="true";
+  data-nowplaying="true";
+  
+</script>
+</body>
 </html>
 
 .sSSSsSS SSsSSSSS .sSSSSs.    .sSSSSs.    .sSSSSs.    SSSSS       .sSSSSs.          .sSSSs.  SSSSS .sSSSSs.       .sSSSSSSSSs.   
